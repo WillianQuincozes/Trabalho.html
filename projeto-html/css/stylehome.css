@@ -1,0 +1,123 @@
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align:center;
+  }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration:NONE;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main,
+aside{
+    display: inline-block;
+    padding: 20px;
+    vertical-align:top;
+    height: 495px;
+}
+main{
+    width: 60%;
+}
+aside{
+    width: 35%;
+    height: 515px;
+}
+section{
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    
+}
+main {
+    background-color: #f0f0f0;
+}
+aside {
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+.slider{
+    width: 350px;
+    height: 150px;
+    overflow: hidden;
+    /* position:absolute; */
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 30%;
+}
+.navigation-bar{
+    display: flex;
+    /* position:absolute; */
+    position: relative;
+    bottom: 35px;
+    left: 80%;
+    transform: translate(-50%);
+}
+
+input{
+    display: none;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #fff;
+    transition: 0.4s;
+}
+
+.slides{
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.slide{
+    width: 33.33%;
+    transition: 0.5s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#bmw1:checked ~ .first{
+    margin-left: 0;
+}
+
+#bmw2:checked ~ .first{
+    margin-left: -33.333%;
+}
+
+#bmw3:checked ~ .first{
+    margin-left: -66.66%;
+}

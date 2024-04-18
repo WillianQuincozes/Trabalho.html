@@ -1,0 +1,72 @@
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align:center;
+  }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration:NONE;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main {
+    height: 475px;
+    margin-top: 4%;
+    margin-left: 42%;
+    margin-right: 36%;
+    justify-content: center;
+}
+input, button{
+    border-radius: 5px;
+    background-color: #d4d4d4;
+}
+.campo {
+    margin-bottom: 1em;
+}
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 3em;
+}
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo input[type="tel1"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    box-shadow: 4px 4px 4px aqua;
+    display: block;
+}
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 2em;
+    border: 0;
+    position: absolute;
+    top: 72%;
+    left: 48%;
+    transform: translate(-50%, -50%)
+}
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
